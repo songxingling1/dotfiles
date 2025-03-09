@@ -1,0 +1,57 @@
+@import "frappe.css";
+* {
+    font-family: "RecMonoCasual Nerd Font","LXGW WenKai";
+    color: @text;
+}
+window#waybar {
+    /* you can also GTK3 CSS functions! */
+    background-color: shade(@base , 0.9);
+}
+#tray {
+    background-color: shade(@overlay2 , 0.9);
+    padding-left: 1em;
+    padding-right: 1em;
+    margin-left: .5em;
+}
+#pulseaudio {
+    background-color: shade(@peach , 0.9);
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    margin-left: 0.5em;
+    color: #36282b;
+}
+#clock {
+    background-color: shade(@pink , 0.9);
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    margin-left: 0.5em;
+    color: #36282b;
+}
+#workspaces {
+    background-color: shade(@sky,0.9);
+    margin-left: 0.5em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
+#workspaces button.active {
+    background-color: #2775b6;
+    margin-left: 0.5em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
+#workspaces button {
+    margin-left: 0.5em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
+#workspaces button:hover {
+    margin-left: 0.5em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
+#bluetooth {
+    background-color: shade(@red,0.9);
+    color: #36282b;
+    padding-left: .5em;
+    padding-right: .5em;
+}

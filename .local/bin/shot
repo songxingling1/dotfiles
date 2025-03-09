@@ -1,0 +1,25 @@
+#!/bin/bash
+name=~/Pictures/$(date "+%Y-%m-%d_%H:%M:%S").png
+answer=$(echo -e '选取区域截图\n全屏截图\n当前窗口截图' | rofi -dmenu -p "Screen Shot")
+case $answer in
+    "选取区域截图")
+        sleep 0.5
+        slurp | grim -g - $name
+        notify-send '截图完成！' '截图保存在'$name -u normal
+        ;;
+    "全屏截图")
+        sleep 0.5
+        grim $name
+        notify-send '截图完成！' '截图保存在'$name -u normal
+        ;;
+    "当前窗口截图")
+        sleep 0.5
+        hyprctl -j activewindow | jq -r '"\(.at[0]),\(.at[1]) \(.size[0])x\(.size[1])"' | grim -g - $name
+        notify-send '截图完成！' '截图保存在'$name -u normal
+        ;;
+    "")
+        echo "选取区域截图"
+        echo "全屏截图"
+        echo "当前窗口截图"
+        ;;
+esac

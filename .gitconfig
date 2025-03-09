@@ -1,0 +1,9 @@
+[url "https://kkgithub.com"]
+	insteadOf = https://github.com
+[url "https://kkgithub.com/HiPhish/yo-dawg.nvim"]
+	insteadOf = https://gitlab.com/HiPhish/yo-dawg.nvim
+[user]
+	name = Xinglin Song
+	email = songxingling1@outlook.com
+[init]
+	defaultBranch = main
