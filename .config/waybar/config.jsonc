@@ -1,6 +1,6 @@
 {
     "layer": "top",
-    "modules-left": ["hyprland/workspaces"],
+    "modules-left": ["custom/arch","hyprland/workspaces"],
     "modules-center": ["hyprland/window"],
     "modules-right": ["bluetooth","tray","pulseaudio", "clock"],
     "reload_style_on_change": true,
@@ -13,13 +13,7 @@
         "tooltip-format" : "{:%y/%m/%d}"
     },
     "hyprland/workspaces": {
-        "format": "{icon}",
-        "format-icons": {
-            "1": " 󰣇 ",
-            "2": "  ",
-            "3": "  ",
-            "4": "  "
-        },
+        "format": " {name} ",
         "persistent-workspaces": {
             "eDP-1": [1, 2, 3, 4]
         }
@@ -48,6 +42,9 @@
         "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{device_enumerate}",
         "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
         "on-click": "blueberry"
+    },
+    "custom/arch": {
+        "format": " 󰣇 "
     }
 }
 

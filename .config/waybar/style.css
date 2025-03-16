@@ -3,14 +3,16 @@
     font-family: "RecMonoCasual Nerd Font","LXGW WenKai";
 }
 window#waybar {
-    /* you can also GTK3 CSS functions! */
     background-color: shade(@base , 0.9);
 }
 #tray {
-    background-color: shade(@overlay2 , 0.9);
+    background-color: shade(@green , 0.9);
     padding-left: 1em;
     padding-right: 1em;
     margin-left: .5em;
+    margin-top: .3em;
+    margin-bottom: .3em;
+    border-radius: .25em;
 }
 #pulseaudio {
     background-color: shade(@peach , 0.9);
@@ -18,55 +20,79 @@ window#waybar {
     padding-right: 0.5em;
     margin-left: 0.5em;
     color: #36282b;
+    margin-top: .3em;
+    margin-bottom: .3em;
+    border-radius: .25em;
 }
 #clock {
-    background-color: shade(@pink , 0.9);
+    background-color: shade(@blue , 0.9);
     padding-left: 0.5em;
     padding-right: 0.5em;
     margin-left: 0.5em;
+    margin-right: 0.5em;
     color: #36282b;
+    margin-top: .3em;
+    margin-bottom: .3em;
+    border-radius: .25em;
 }
 #workspaces {
-    background-color: shade(@sky,0.9);
-    margin-left: 0.5em;
-    padding-left: 0.5em;
-    padding-right: 0.5em;
+    background-color: transparent;
+    margin-top: .3em;
+    margin-bottom: .3em;
 }
 #workspaces button.persistent {
     margin-left: 0.5em;
     padding-left: 0.5em;
     padding-right: 0.5em;
     border: none;
-    background-color: shade(@sky,0.9);
-    color: #36282b;
+    background-color: shade(@surface2,0.9);
+    color: @text;
 }
 #workspaces button.active {
-    background-color: #2775b6;
-    margin-left: 0.5em;
-    padding-left: 0.5em;
-    padding-right: 0.5em;
-}
-#workspaces button {
+    background-color: shade(@text,0.9);
     margin-left: 0.5em;
     padding-left: 0.5em;
     padding-right: 0.5em;
     color: @crust;
 }
+#workspaces button {
+    margin-left: 0.5em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    color: @text;
+    background-color: shade(@surface2,0.9);
+    border-radius: .25em;
+}
 #workspaces button:hover {
     margin-left: 0.5em;
     padding-left: 0.5em;
     padding-right: 0.5em;
-    background-color: @flamingo;
-    color: @surface2;
+    background-color: @subtext0;
+    color: @crust;
 }
 
 #bluetooth {
-    background-color: shade(@red,0.9);
+    background-color: shade(@rosewater,0.9);
     color: #36282b;
+    padding-left: .5em;
+    padding-right: .5em;
+    margin-top: .3em;
+    margin-bottom: .3em;
+    border-radius: .25em;
+    margin-left: .5em;
+}
+
+#window {
+    color: @mantle;
+    border-radius: .25em;
+    margin-top: .3em;
+    margin-bottom: .3em;
+    background-color: @yellow;
     padding-left: .5em;
     padding-right: .5em;
 }
 
-#window {
-    color: @text;
+#custom-arch {
+    color: @blue;
+    padding-left: .5em;
 }
