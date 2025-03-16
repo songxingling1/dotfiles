@@ -92,6 +92,10 @@ window#waybar {
     padding-right: .5em;
 }
 
+window#waybar.empty #window {
+    background-color: transparent;
+}
+
 #custom-arch {
     color: @blue;
     padding-left: .5em;
