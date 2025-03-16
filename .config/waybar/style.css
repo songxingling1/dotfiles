@@ -1,7 +1,6 @@
 @import "frappe.css";
 * {
     font-family: "RecMonoCasual Nerd Font","LXGW WenKai";
-    color: @text;
 }
 window#waybar {
     /* you can also GTK3 CSS functions! */
@@ -33,6 +32,14 @@ window#waybar {
     padding-left: 0.5em;
     padding-right: 0.5em;
 }
+#workspaces button.persistent {
+    margin-left: 0.5em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    border: none;
+    background-color: shade(@sky,0.9);
+    color: #36282b;
+}
 #workspaces button.active {
     background-color: #2775b6;
     margin-left: 0.5em;
@@ -43,15 +50,23 @@ window#waybar {
     margin-left: 0.5em;
     padding-left: 0.5em;
     padding-right: 0.5em;
+    color: @crust;
 }
 #workspaces button:hover {
     margin-left: 0.5em;
     padding-left: 0.5em;
     padding-right: 0.5em;
+    background-color: @flamingo;
+    color: @surface2;
 }
+
 #bluetooth {
     background-color: shade(@red,0.9);
     color: #36282b;
     padding-left: .5em;
     padding-right: .5em;
+}
+
+#window {
+    color: @text;
 }

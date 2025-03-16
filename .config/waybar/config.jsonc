@@ -3,9 +3,7 @@
     "modules-left": ["hyprland/workspaces"],
     "modules-center": ["hyprland/window"],
     "modules-right": ["bluetooth","tray","pulseaudio", "clock"],
-    "sway/window": {
-        "max-length": 50
-    },
+    "reload_style_on_change": true,
     "battery": {
         "format": "{capacity}% {icon}",
         "format-icons": ["", "", "", "", ""]
@@ -17,11 +15,11 @@
     "hyprland/workspaces": {
         "format": "{icon}",
         "format-icons": {
-            "1": "<span color='#36282b'>󰣇</span>",
-            "2": "<span color='#36282b'></span>",
-            "3": "<span color='#36282b'></span>",
-            "4": "<span color='#36282b'></span>"
-            },
+            "1": " 󰣇 ",
+            "2": "  ",
+            "3": "  ",
+            "4": "  "
+        },
         "persistent-workspaces": {
             "eDP-1": [1, 2, 3, 4]
         }
