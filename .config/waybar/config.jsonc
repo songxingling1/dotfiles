@@ -9,8 +9,9 @@
         "format-icons": ["", "", "", "", ""]
     },
     "clock": {
-        "format-alt": "{:%a, %d. %b  %H:%M}",
-        "tooltip-format" : "{:%y/%m/%d}"
+        "format-alt": "{:L%Y/%m/%d %A %H:%M}",
+        "tooltip-format" : "{:%Y/%m/%d}",
+        "locale": "zh_CN.UTF-8"
     },
     "hyprland/workspaces": {
         "format": " {name} ",
